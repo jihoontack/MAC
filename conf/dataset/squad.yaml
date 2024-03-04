@@ -1,0 +1,22 @@
+# @package _global_
+dataset: squad
+
+test_split: validation
+test_start_idx: 0
+test_end_idx: -1
+
+qa_lt_split: train
+qa_lt_start_idx: 0
+qa_lt_end_idx: 40006
+
+qa_lt_val_split: train
+qa_lt_val_start_idx: 40006
+qa_lt_val_end_idx: 42118
+
+train_split: train
+train_start_idx: 42118
+train_end_idx: 82011
+
+val_split: train
+val_start_idx: 82011
+val_end_idx: 87599

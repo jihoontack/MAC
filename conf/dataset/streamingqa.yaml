@@ -1,0 +1,9 @@
+# @package _global_
+dataset: streamingqa
+
+data_dir: '/data/StreamingQA/'
+train_path: '${data_dir}/train.csv'
+val_path: '${data_dir}/val.csv'
+test_path: '${data_dir}/test.csv'
+lt_train_path: '${data_dir}/qa_train.csv'
+lt_val_path: '${data_dir}/qa_val.csv'
