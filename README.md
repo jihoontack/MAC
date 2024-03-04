@@ -20,8 +20,6 @@ or change the data_dir in `./conf/dataset/<DATASET_NAME>.yaml`
 
 ## How to run
 
-**WARNING**: There is a library update (Rerun the conda commands above if you have installed the old version)
-
 **WANDB**: To use weight and bias (wandb) logging
 - Create a wandb account and get your wandb key
 - Set `wandb_key` in `./conf/config.yaml` as your wandb key
