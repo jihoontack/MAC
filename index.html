@@ -128,6 +128,26 @@
             margin-top: 50px;
             height: 80px;
         }
+
+        .responsive-iframe {
+            width: 650px;
+            height: 350px;
+            max-width: 100%;
+            margin: auto; /* Center the iframe */
+        }
+
+        .responsive-iframe iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 650px){
+            .responsive-iframe {
+                max-width: 100%;
+                padding-top: 56.25%; /* Maintain the 16:9 aspect ratio */
+            }
+        }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -249,8 +269,8 @@
     <div class="outline-text-2" id="text-orgc5d597d">
     
     <br />
-    <div style="text-align:center;">
-    <iframe width="650" height="365" max-width=100% src="https://www.youtube.com/embed/7WG6-aYBgX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="responsive-iframe">
+        <iframe src="https://www.youtube.com/embed/7WG6-aYBgX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div id="outline-container-orgc5d597d" class="outline-2">
@@ -273,7 +293,7 @@
     </table>
 </div>
 
-    <h2 id="orgc5d597d"></h2>
+<h2 id="orgc5d597d"></h2>
 
-  </body>
+</body>
 </html>
