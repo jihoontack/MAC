@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MAC</title>
+    <meta name="author" content="MAC" />
+    <meta name="generator" content="Org Mode" />
+    <style>
+      .title  { text-align: center;
+             margin-bottom: .2em; }
+      .subtitle { text-align: center;
+                font-size: medium;
+                font-weight: bold;
+                margin-top:0; }
+      .todo   { font-family: monospace; color: red; }
+      .done   { font-family: monospace; color: green; }
+      .priority { font-family: monospace; color: orange; }
+      .tag    { background-color: #eee; font-family: monospace;
+               padding: 2px; font-size: 80%; font-weight: normal; }
+      .timestamp { color: #bebebe; }
+      .timestamp-kwd { color: #5f9ea0; }
+      .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+      .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+      .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+      .underline { text-decoration: underline; }
+      img {
+        max-width: 98%;
+        padding-right: 2%;
+        vertical-align: middle;
+      }
+
+      table { table-layout: fixed; }
+      td {
+        width: 50%;
+      }
+
+      body {
+        max-width: 980px;
+        padding: 10px;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 375;
+        background-color: #fdfdfd;
+        line-height: 1.3;
+      }
+
+      strong{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 500;
+      }
+
+      h1 {
+        margin-top: 0;
+        line-height: 1;
+        font-weight: 500;
+      }
+
+      h2 {
+        border-bottom: 1px solid #ddd;
+        margin-top: 1.3em;
+        margin-bottom: 0em;
+        padding-bottom: 4px;
+        font-weight: 500;
+      }
+
+      li {
+        margin: 7px 0;
+      }
+
+      a { 
+        color:#1772d0; 
+        text-decoration-line: none;
+      }
+      a:hover {
+        color:#f09228; 
+      }
+
+      .footer {
+        padding-top: 10px;
+      }
+
+      .footer-cover {
+        background-color: #f5f5f5;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 50px;
+        height: 80px;
+      }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+  </head>
+  <body>
+  	<br>
+  	<br>
+  	<span style="font-size:36px; color:#000;">
+            <b>
+            	<center>
+                Online Adaptation of Language Models with a <br>
+                Memory of Amortized Contexts
+               </center>
+            </b>
+        </span>
+		</span>
+		<br>
+    <table align=center width=600px>
+            <table align=center width=600px>
+                <tr>
+                        <center>
+                            <div style="font-size:18px; text-align: center; white-space: nowrap;">
+                                <a href="https://jihoontack.github.io">Jihoon Tack</a><sup>1</sup>, &nbsp; 
+                                <a href='https://sites.google.com/view/jaehyungkim'>Jaehyung Kim</a><sup>2</sup>, &nbsp;
+                                <a href='https://ericmitchell.ai'>Eric Mitchell</a><sup>3</sup>, &nbsp;
+                                <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a><sup>1</sup>, &nbsp;
+                                <a href='https://www.stats.ox.ac.uk/~teh/'>Yee Whye Teh</a><sup>4</sup>, &nbsp;
+                                <a href='https://jonathan-schwarz.github.io/'>Jonathan Richard Schwarz</a><sup>5</sup>
+                            </div>
+
+                            <br>
+
+                            <span style="font-size:16px; text-align: center; white-space: nowrap;">
+                                <sup>1</sup> KAIST &nbsp; &nbsp; 
+                                <sup>2</sup> CMU &nbsp; &nbsp; 
+                                <sup>3</sup> Stanford University &nbsp; 
+                                <sup>4</sup> University of Oxford &nbsp; 
+                                <sup>5</sup> Harvard University &nbsp;
+                            </span>
+
+                            <br>
+                            <br>
+
+                            <div class="paper-btn-parent">
+                                <a href="https://arxiv.org/abs/2403.04317">
+                                    [<b>arXiv</b>]
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="https://github.com/jihoontack/MAC">
+                                    [<b>Code</b>]
+                                </a>
+                            </div>
+                        </center>
+                </tr>
+            </table>
+        </table>
+
+    <div id="outline-container-orgc5d597d" class="outline-2">
+    <h2 id="orgc5d597d">Abstract</h2>
+    <div class="outline-text-2" id="text-orgc5d597d">
+    <p style="text-align:justify">
+        Due to the rapid generation and dissemination of information, large language models (LLMs) quickly run out of date despite enormous development costs. Due to this crucial need to keep models updated, online learning has emerged as a critical necessity when utilizing LLMs for real-world applications. However, given the ever-expanding corpus of unseen documents and the large parameter space of modern LLMs, efficient adaptation is essential. To address these challenges, we propose Memory of Amortized Contexts (MAC), an efficient and effective online adaptation framework for LLMs with strong knowledge retention. We propose an amortized feature extraction and memory-augmentation approach to compress and extract information from new documents into compact modulations stored in a memory bank. When answering questions, our model attends to and extracts relevant knowledge from this memory bank. To learn informative modulations in an efficient manner, we utilize amortization-based meta-learning, which substitutes the optimization process with a single forward pass of the encoder. Subsequently, we learn to choose from and aggregate selected documents into a single modulation by conditioning on the question, allowing us to adapt a frozen language model during test time without requiring further gradient updates. Our experiment demonstrates the superiority of MAC in multiple aspects, including online adaptation performance, time, and memory efficiency.
+    </p>
+    
+
+    <div id="outline-container-orgc5d597d" class="outline-2">
+    <h2 id="orgc5d597d">Method</h2>
+    <div class="outline-text-2" id="text-orgc5d597d">
+
+    <figure>
+  	<img src="resources/concept_figure.png">
+		</figure>
+
+    <p style="text-align:justify">
+    We propose Memory of Amortized Contexts (MAC), an efficient and effective online learning framework for static LMs. The core idea of MAC is to freeze the parameter of the LM and instead edit the LM by using a predicted Parameter Efficient FineTuning (PEFT) modulation, which capturing relevant knowledge from hitherto unseen documents. Specifically, we utilize amortization-based meta-learning to compress a new document's information into a compact modulation where such modulation maximizes the task performance of the adapted LM (e.g., question-and-answer ability). Then, we learn to aggregate documents represented in feature space into a single modulation based on a given question. During the online adaptation stage (or test-time), we thus store each instance of a document stream in a memory bank, which we attend over to extract relevant information when a new query is given.
+    </p>
+
+    <div id="outline-container-orgc5d597d" class="outline-2">
+    <h2 id="orgc5d597d">Experimental Results</h2>
+    <div class="outline-text-2" id="text-orgc5d597d">
+    
+    <figure style="text-align: center;">
+  	<img src="resources/online.png" style="width: 75%;">
+		</figure>	
+
+		<p style="text-align:justify">
+    <strong>Online adaptation performance</strong>:
+		We report the exact match (EM) and F1 score by adapting the LM on a stream of documents and then performing QA based on the learned data. 
+		Overall, MAC significantly outperforms all the prior online finetuning methods.
+		</p>
+		<br>
+
+    <figure style="text-align: center;">
+  	<img src="resources/retrieve.png" style="width: 50%;">
+		</figure>
+
+		<p style="text-align:justify">
+		<strong>Improving MAC with retrieval augmentation</strong>: 
+		We show that MAC can be further improved by using retrieval augmentations. As shown in the table above, using BM25 with MAC significantly improves the performance by a large margin in all cases. More interestingly, the improvment seems to increase with model size.
+		</p>
+		<br>
+
+		<figure style="text-align: center;">
+  	<img src="resources/efficiency_retention.png" style="width: 100%;">
+		</figure>
+
+    <p style="text-align:justify">
+		<strong>Adaptation efficiency of MAC (left)</strong>: 
+		MAC is significantly efficient in both memory and adaptation time compared to other online finetuning methods; we note that MAC does not require any gradient computation to update the model, while online finetuning needs the gradient to update the model.		
+	  </p>
+
+		<p style="text-align:justify">
+		<strong>Knowledge retention of MAC (right)</strong>: 
+		MAC shows a strong knowledge retention compared to other online finetuning methods. This result indeed highlight i) the benefit of using a memory bank as a tool for preserving knowledge and ii) our aggregation mechanism well predicts the modulation even when the memory bank's cardinality increases throughout the adaptation process.
+		</p>
+
+    <div id="outline-container-orgc5d597d" class="outline-2">
+    <h2 id="orgc5d597d">MAC Explained</h2>
+    <div class="outline-text-2" id="text-orgc5d597d">
+    
+    <br />
+    <div style="text-align:center;">
+    <iframe width="650" height="365" src="https://www.youtube.com/embed/7WG6-aYBgX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="outline-container-orgc5d597d" class="outline-2">
+    <h2 id="orgc5d597d">Citation</h2>
+    <table width="100%" border="0" cellspacing="1" cellpadding="1" align="center">        
+        <tr>
+            <td width="100%" style="background-color: #EEEEEE;">
+                <div style="font-size:14px;">
+                    <tt>
+                        @article{tack2024online,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title={Online Adaptation of Language Models with a Memory of Amortized Contexts},<br>
+			    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author={Tack, Jihoon and Kim, Jaehyung and Mitchell, Eric and Shin, Jinwoo and Teh, Yee Whye and Schwarz, Jonathan Richard},<br>
+			    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2403.04317},<br>
+			    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>
+			    							}
+                    </tt>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+    <h2 id="orgc5d597d"></h2>
+
+  </body>
+</html>
