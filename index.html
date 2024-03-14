@@ -12,89 +12,122 @@
     <meta name="author" content="MAC" />
     <meta name="generator" content="Org Mode" />
     <style>
-      .title  { text-align: center;
-             margin-bottom: .2em; }
-      .subtitle { text-align: center;
-                font-size: medium;
-                font-weight: bold;
-                margin-top:0; }
-      .todo   { font-family: monospace; color: red; }
-      .done   { font-family: monospace; color: green; }
-      .priority { font-family: monospace; color: orange; }
-      .tag    { background-color: #eee; font-family: monospace;
-               padding: 2px; font-size: 80%; font-weight: normal; }
-      .timestamp { color: #bebebe; }
-      .timestamp-kwd { color: #5f9ea0; }
-      .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-      .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-      .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-      .underline { text-decoration: underline; }
-      img {
-        max-width: 98%;
-        padding-right: 2%;
-        vertical-align: middle;
-      }
+        .title  { text-align: center;
+                 margin-bottom: .2em; }
+        .subtitle { text-align: center;
+                    font-size: medium;
+                    font-weight: bold;
+                    margin-top:0; }
+        .todo   { font-family: monospace; color: red; }
+        .done   { font-family: monospace; color: green; }
+        .priority { font-family: monospace; color: orange; }
+        .tag    { background-color: #eee; font-family: monospace;
+                   padding: 2px; font-size: 80%; font-weight: normal; }
+        .timestamp { color: #bebebe; }
+        .timestamp-kwd { color: #5f9ea0; }
+        .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+        .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+        .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+        .underline { text-decoration: underline; }
 
-      table { table-layout: fixed; }
-      td {
-        width: 50%;
-      }
+        .figure-slarge img {
+            width: 100%; /* width for large figure */
+            display: block;
+            margin: 0 auto; /* center image */
+        }
 
-      body {
-        max-width: 980px;
-        padding: 10px;
-        padding-top: 25px;
-        padding-bottom: 40px;
-        margin: 0 auto;
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight: 375;
-        background-color: #fdfdfd;
-        line-height: 1.3;
-      }
+        .figure-large img {
+            width: 75%; /* width for large figure */
+            display: block;
+            margin: 0 auto; /* center image */
+        }
 
-      strong{
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight: 500;
-      }
+        .figure-medium img {
+            width: 50%; /* width for medium figure */
+            display: block;
+            margin: 0 auto; /* center image */
+        }
 
-      h1 {
-        margin-top: 0;
-        line-height: 1;
-        font-weight: 500;
-      }
+        /* other figure styles can go here */
 
-      h2 {
-        border-bottom: 1px solid #ddd;
-        margin-top: 1.3em;
-        margin-bottom: 0em;
-        padding-bottom: 4px;
-        font-weight: 500;
-      }
+        @media screen and (max-width: 600px) { /* adjust the pixel value based on your design */
+        .figure-slarge img, .figure-large img, .figure-medium img {
+            width: 100%; /* full width on smaller screens */
+            }
+        }
 
-      li {
-        margin: 7px 0;
-      }
+        img {
+            max-width: 100%;
+            height: auto; /* Maintains the aspect ratio */
+            padding-right: 2%;
+            vertical-align: middle;
+        }
 
-      a { 
-        color:#1772d0; 
-        text-decoration-line: none;
-      }
-      a:hover {
-        color:#f09228; 
-      }
+        figure {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-      .footer {
-        padding-top: 10px;
-      }
+        table { table-layout: fixed; }
+        td {
+            width: 50%;
+        }
 
-      .footer-cover {
-        background-color: #f5f5f5;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 50px;
-        height: 80px;
-      }
+        body {
+            max-width: 980px;
+            padding: 10px;
+            padding-top: 25px;
+            padding-bottom: 40px;
+            margin: 0 auto;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 375;
+            background-color: #fdfdfd;
+            line-height: 1.3;
+        }
 
+        strong{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+        }
+
+        h1 {
+            margin-top: 0;
+            line-height: 1;
+            font-weight: 500;
+        }
+
+        h2 {
+            border-bottom: 1px solid #ddd;
+            margin-top: 1.3em;
+            margin-bottom: 0em;
+            padding-bottom: 4px;
+            font-weight: 500;
+        }
+
+        li {
+           margin: 7px 0;
+          }
+
+        a { 
+            color:#1772d0; 
+            text-decoration-line: none;
+        }
+        a:hover {
+            color:#f09228; 
+        }
+
+        .footer {
+            padding-top: 10px;
+        }
+
+        .footer-cover {
+            background-color: #f5f5f5;
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 50px;
+            height: 80px;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -104,7 +137,7 @@
   <body>
   	<br>
   	<br>
-  	<span style="font-size:36px; color:#000;">
+  	<span style="font-size:34px; color:#000;">
             <b>
             	<center>
                 Online Adaptation of Language Models with a <br>
@@ -115,43 +148,41 @@
 		</span>
 		<br>
     <table align=center width=600px>
-            <table align=center width=600px>
-                <tr>
-                        <center>
-                            <div style="font-size:18px; text-align: center; white-space: nowrap;">
-                                <a href="https://jihoontack.github.io">Jihoon Tack</a><sup>1</sup>, &nbsp; 
-                                <a href='https://sites.google.com/view/jaehyungkim'>Jaehyung Kim</a><sup>2</sup>, &nbsp;
-                                <a href='https://ericmitchell.ai'>Eric Mitchell</a><sup>3</sup>, &nbsp;
-                                <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a><sup>1</sup>, &nbsp;
-                                <a href='https://www.stats.ox.ac.uk/~teh/'>Yee Whye Teh</a><sup>4</sup>, &nbsp;
-                                <a href='https://jonathan-schwarz.github.io/'>Jonathan Richard Schwarz</a><sup>5</sup>
-                            </div>
+        <tr>
+        <center>
+        <div style="font-size:18px; text-align: center">
+            <a href="https://jihoontack.github.io">Jihoon Tack</a><sup>1</sup>, &nbsp; 
+            <a href='https://sites.google.com/view/jaehyungkim'>Jaehyung Kim</a><sup>2</sup>, &nbsp;
+            <a href='https://ericmitchell.ai'>Eric Mitchell</a><sup>3</sup>, &nbsp;
+            <a href='https://alinlab.kaist.ac.kr/shin.html'>Jinwoo Shin</a><sup>1</sup>, &nbsp;
+            <a href='https://www.stats.ox.ac.uk/~teh/'>Yee Whye Teh</a><sup>4</sup>, &nbsp;
+            <a href='https://jonathan-schwarz.github.io/'>Jonathan Richard Schwarz</a><sup>5</sup>
+        </div>
 
-                            <br>
+        <br>
 
-                            <span style="font-size:16px; text-align: center; white-space: nowrap;">
-                                <sup>1</sup> KAIST &nbsp; &nbsp; 
-                                <sup>2</sup> CMU &nbsp; &nbsp; 
-                                <sup>3</sup> Stanford University &nbsp; 
-                                <sup>4</sup> University of Oxford &nbsp; 
-                                <sup>5</sup> Harvard University &nbsp;
-                            </span>
+        <span style="font-size:16px; text-align: center">
+            <sup>1</sup> KAIST &nbsp; &nbsp; 
+            <sup>2</sup> CMU &nbsp; &nbsp; 
+            <sup>3</sup> Stanford University &nbsp; 
+            <sup>4</sup> University of Oxford &nbsp; 
+            <sup>5</sup> Harvard University &nbsp;
+        </span>
 
-                            <br>
-                            <br>
+        <br>
+        <br>
 
-                            <div class="paper-btn-parent">
-                                <a href="https://arxiv.org/abs/2403.04317">
-                                    [<b>arXiv</b>]
-                                </a>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="https://github.com/jihoontack/MAC">
-                                    [<b>Code</b>]
-                                </a>
-                            </div>
-                        </center>
-                </tr>
-            </table>
+        <div class="paper-btn-parent">
+            <a href="https://arxiv.org/abs/2403.04317">
+            [<b>arXiv</b>]
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/jihoontack/MAC">
+            [<b>Code</b>]
+            </a>
+            </div>
+        </center>
+        </tr>
         </table>
 
     <div id="outline-container-orgc5d597d" class="outline-2">
@@ -166,9 +197,9 @@
     <h2 id="orgc5d597d">Method</h2>
     <div class="outline-text-2" id="text-orgc5d597d">
 
-    <figure>
-  	<img src="resources/concept_figure.png">
-		</figure>
+    <figure class="figure-slarge">
+  	 <img src="resources/concept_figure.png">
+	</figure>
 
     <p style="text-align:justify">
     We propose Memory of Amortized Contexts (MAC), an efficient and effective online learning framework for static LMs. The core idea of MAC is to freeze the parameter of the LM and instead edit the LM by using a predicted Parameter Efficient FineTuning (PEFT) modulation, which capturing relevant knowledge from hitherto unseen documents. Specifically, we utilize amortization-based meta-learning to compress a new document's information into a compact modulation where such modulation maximizes the task performance of the adapted LM (e.g., question-and-answer ability). Then, we learn to aggregate documents represented in feature space into a single modulation based on a given question. During the online adaptation stage (or test-time), we thus store each instance of a document stream in a memory bank, which we attend over to extract relevant information when a new query is given.
@@ -178,40 +209,40 @@
     <h2 id="orgc5d597d">Experimental Results</h2>
     <div class="outline-text-2" id="text-orgc5d597d">
     
-    <figure style="text-align: center;">
-  	<img src="resources/online.png" style="width: 75%;">
-		</figure>	
+    <figure class="figure-large">
+  	 <img src="resources/online.png">
+	</figure>	
 
-		<p style="text-align:justify">
-    <strong>Online adaptation performance</strong>:
-		We report the exact match (EM) and F1 score by adapting the LM on a stream of documents and then performing QA based on the learned data. 
-		Overall, MAC significantly outperforms all the prior online finetuning methods.
-		</p>
-		<br>
+	<p style="text-align:justify">
+        <strong>Online adaptation performance</strong>:
+	   We report the exact match (EM) and F1 score by adapting the LM on a stream of documents and then performing QA based on the learned data. 
+	   Overall, MAC significantly outperforms all the prior online finetuning methods.
+	</p>
+	<br>
 
-    <figure style="text-align: center;">
-  	<img src="resources/retrieve.png" style="width: 50%;">
-		</figure>
+    <figure class="figure-medium">
+  	     <img src="resources/retrieve.png">
+	</figure>
 
-		<p style="text-align:justify">
+	<p style="text-align:justify">
 		<strong>Improving MAC with retrieval augmentation</strong>: 
 		We show that MAC can be further improved by using retrieval augmentations. As shown in the table above, using BM25 with MAC significantly improves the performance by a large margin in all cases. More interestingly, the improvment seems to increase with model size.
-		</p>
-		<br>
+	</p>
+	<br>
 
-		<figure style="text-align: center;">
-  	<img src="resources/efficiency_retention.png" style="width: 100%;">
-		</figure>
+	<figure class="figure-slarge">
+  	     <img src="resources/efficiency_retention.png">
+	</figure>
 
     <p style="text-align:justify">
 		<strong>Adaptation efficiency of MAC (left)</strong>: 
 		MAC is significantly efficient in both memory and adaptation time compared to other online finetuning methods; we note that MAC does not require any gradient computation to update the model, while online finetuning needs the gradient to update the model.		
-	  </p>
+	</p>
 
-		<p style="text-align:justify">
+	<p style="text-align:justify">
 		<strong>Knowledge retention of MAC (right)</strong>: 
 		MAC shows a strong knowledge retention compared to other online finetuning methods. This result indeed highlight i) the benefit of using a memory bank as a tool for preserving knowledge and ii) our aggregation mechanism well predicts the modulation even when the memory bank's cardinality increases throughout the adaptation process.
-		</p>
+	</p>
 
     <div id="outline-container-orgc5d597d" class="outline-2">
     <h2 id="orgc5d597d">MAC Explained</h2>
@@ -219,7 +250,7 @@
     
     <br />
     <div style="text-align:center;">
-    <iframe width="650" height="365" src="https://www.youtube.com/embed/7WG6-aYBgX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="650" height="365" max-width=100% src="https://www.youtube.com/embed/7WG6-aYBgX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div id="outline-container-orgc5d597d" class="outline-2">
@@ -230,11 +261,11 @@
                 <div style="font-size:14px;">
                     <tt>
                         @article{tack2024online,<br>
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title={Online Adaptation of Language Models with a Memory of Amortized Contexts},<br>
-			    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author={Tack, Jihoon and Kim, Jaehyung and Mitchell, Eric and Shin, Jinwoo and Teh, Yee Whye and Schwarz, Jonathan Richard},<br>
-			    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2403.04317},<br>
-			    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>
-			    							}
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title={Online Adaptation of Language Models with a Memory of Amortized Contexts},<br>
+			    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author={Tack, Jihoon and Kim, Jaehyung and Mitchell, Eric and Shin, Jinwoo and Teh, Yee Whye and Schwarz, Jonathan Richard},<br>
+			    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2403.04317},<br>
+			    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year={2024},<br>
+			    		}
                     </tt>
                 </div>
             </td>
